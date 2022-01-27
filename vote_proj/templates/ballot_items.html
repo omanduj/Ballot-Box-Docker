@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="card-wrapper2">
+        <div class="card">
+            <h2 class="center">Add Ballot Item</h2>
+            <form name="ballot_item" onsubmit="return false">
+                <label for="item_name">Item Name</label>
+                <input type="item_name" maxlength="15" name="item_name" class="field" required>
+
+                <label for="description">Description</label>
+                <input type="description" maxlength="100" name="description" class="field">
+
+                <label for="image">Image (In Url Form)</label>
+                <input type="text" name="image" class="field">
+
+                <div class='center item_added' id='response_add'>
+                   
+                </div>
+
+                <input style="float: left; margin-left: 2em; width: 40%;" type="submit" value="Add Item" class="btn" required>
+            </form>
+
+            <form action="/dashboard/">
+                <button style="float: left; margin-left: 2em; width: 40%; margin-top: 2.5em;" class="btn" required>
+                    Done
+                </button>
+            </form>
+        </div>
+    </div>
+{% endblock %}
