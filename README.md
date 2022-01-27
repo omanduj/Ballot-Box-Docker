@@ -17,7 +17,7 @@ In order to properly run this project you must first install Docker, a tool used
 
 https://docs.docker.com/
 
-Following installation and opening of docker enter the root directory of the application in the terminal (./Ballot-Box-Docker) and replace information
+Following installation and opening of docker enter the root directory of the application in the terminal (./Ballot_Box-main) and replace information
 as needed in the yaml file with desired values and run the command:
 
 "docker-compose up --build -d"
