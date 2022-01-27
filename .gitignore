@@ -1,3 +1,5 @@
 .DS_Store
 __pycache__
 delete.py
+.venv
+.pytest_cache
