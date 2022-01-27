@@ -13,17 +13,16 @@ name.
 How to Run
 -----------
 
-In order to properly run this project you must first install Poetry, a tool used for dependency management and
-packaging in Python. A link to the installation documents can be found here:
->https://python-poetry.org/docs/
+In order to properly run this project you must first install Docker, a tool used for creating containers that are isolated from one another and bundle their own software, libraries, and configuration files; they can communicate with each other through well-defined channels. Find Docker documentation here:
 
-Following installation run the command "poetry install", this will install all the project's dependencies.
+https://docs.docker.com/
 
-In order to run the application, you must execute the following command in the appropriate directory
-(vote_proj/vote_proj):
->python run.py
+Following installation and opening of docker enter the root directory of the application in the terminal (./Ballot-Box-Docker) and replace information
+as needed in the yaml file with desired values and run the command:
 
- This will cause the program to run locally on port 5001. The webpage is located in the following url:
+"docker-compose up --build -d"
+
+This will create a container with the image of the application as well as an image of the corresponding version of MongoDB. This will cause the program to run locally on port 5001. The webpage is located in the following url:
 >http://127.0.0.1:5001/
 ![Screen Shot 2022-01-18 at 4 21 30 PM](https://user-images.githubusercontent.com/44513190/150029387-43b55562-4871-48dc-aeea-2b0bee8d2596.png)
 
